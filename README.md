@@ -1,13 +1,13 @@
 # varlink-java-maven-plugin-test
 
-## What I did to generate the bindings
+## What I did to generate the bindings (not so immportant)
 
 ```
 mvn varlink:generate
 mv target/generated-sources/varlink/io src/main/java/io
 ```
 
-## Try building with broken pom
+## Try building with broken pom (pom.xml)
 ```
 mvn clean install
 ```
@@ -15,7 +15,7 @@ This will fail because maven uses varlink-core:${project-version}. It is still t
 
 For example: If you set the project version in the pom.xml from 0.0.1 to 9.9.9 the maven build will fail because it tries to find varlink-core:9.9.9.
 
-## Try building with fixed pom
+## Try building with fixed pom (pom.fix)
 ```
 mv pom.xml pom.old
 mv pom.fix pom.xml
