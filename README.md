@@ -18,7 +18,7 @@ For example: If you set the project version in the pom.xml from 0.0.1 to 9.9.9 t
 ## Try building with fixed pom
 ```
 mv pom.xml pom.old
-mv pom.fixed pom.xml
+mv pom.fix pom.xml
 mvn clean install
 ```
 Everythink works just fine.
